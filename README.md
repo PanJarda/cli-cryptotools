@@ -16,8 +16,8 @@ For example:
 ## Usage examples
 Fiat currency is always abbreviation and cryptocurrency is always fullname. It uses coinmarketcap.com api, so the names of currencies can be found there: https://coinmarketcap.com/api/.
 ```bash
-./convert 10 bitcoin to eur
-./convert 10 eur to bitcoin
-./calculate-portfolio-value
-./calculate-portfolio-value in eur
+./convert.sh 10 bitcoin to eur
+./convert.sh 10 eur to bitcoin
+./calculate-portfolio-value.sh
+./calculate-portfolio-value.sh in eur
 ```
