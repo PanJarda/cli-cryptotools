@@ -7,7 +7,7 @@ sum=0
 
 while read line
 do
-	converted=$(./convert $line to $main_currency)
+	converted=$(./convert.sh $line to $main_currency)
 	sum=`dc -e "$sum $converted + p"`
 done < portfolio
 
