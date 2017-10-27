@@ -12,3 +12,11 @@ For example:
 1000 litecoin
 123 ethereum
 ```
+
+## Usage example
+```bash
+./convert 10 bitcoin to eur
+./convert 10 eur to bitcoin
+./calculate-portfolio-value
+./calculate-portfolio-value in eur
+```
