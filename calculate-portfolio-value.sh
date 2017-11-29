@@ -12,4 +12,4 @@ do
 done < portfolio
 
 echo $sum  
-echo `date -u +"%Y-%m-%dT%H:%M:%SZ"` $sum >> history.log
+echo `date -u +"%Y-%m-%dT%H:%M:%SZ"` $sum >> ${main_currency}.log
