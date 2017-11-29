@@ -7,8 +7,9 @@ sum=0
 
 while read line
 do
-	converted=$(./convert.sh $line to $main_currency)
-	sum=`dc -e "$sum $converted + p"`
+	converted=$(./convert $line to $main_currency)
+	sum=`dc -e "3 k $sum $converted 1000000 / + p"`
 done < portfolio
 
-echo $sum
+echo $sum  
+echo `date -u +"%Y-%m-%dT%H:%M:%SZ"` $sum >> history.log
